@@ -21,7 +21,7 @@ const DATA = [
 
 export default function Data() {
 	return (
-		<div className=" grid grid-cols-2 py-20">
+		<div className=" grid grid-cols-2 py-20 px-8 bg-white shadow-md">
 			<div className="flex flex-col justify-center">
 				<div className="text-2xl font-semibold flex items-end space-x-4">
 					<img src="/iot.svg" className="h-20" />
@@ -58,7 +58,6 @@ export default function Data() {
 					</div>
 				</Link>
 			</div>
-			<div className="bg-gray-300"></div>
 		</div>
 	);
 }

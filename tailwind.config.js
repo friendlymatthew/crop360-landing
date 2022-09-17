@@ -7,7 +7,7 @@ module.exports = {
 	theme: {
 		extend: {
 			backgroundImage: {
-				my_bg: "url('../public/background.jpg')",
+				graph: "url('/graph-paper.svg')",
 			},
 		},
 	},
