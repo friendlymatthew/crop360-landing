@@ -6,6 +6,9 @@ import Data from "../components/Data";
 import Cloud from "../components/Cloud";
 import Sensor from "../components/Sensor";
 import Banner from "../components/Banner";
+import Water from "../components/Water";
+
+import { Parallax } from "react-scroll-parallax";
 
 export default function Home() {
 	return (
@@ -28,10 +31,10 @@ export default function Home() {
 					</div>
 				</div>
 
-				<div className="min-h-screen grid grid-cols-1 divide-y-2 gap-y-20 divide-gray-200 py-32 text-black px-2 md:px-32">
+				<div className="min-h-screen grid grid-cols-1 divide-y-2 gap-y-20 divide-gray-200 py-32 text-black px-2 md:px-20">
 					<Data />
 					<Sensor />
-					<div className="h-80">Our Data</div>
+					<Water />
 					<div className="h-80">Our Data</div>
 				</div>
 			</main>

@@ -27,23 +27,21 @@ const DATA = [
 
 export default function Sensor() {
 	return (
-		<section class="text-white bg-gradient-to-br to-emerald-600  from-emerald-700  shadow-md">
-			<div class="px-4 py-16 max-w-screen-xl sm:px-6 lg:px-8">
-				<div class="max-w-xl">
-					<h2 class="text-3xl font-bold sm:text-4xl">Our Sensors</h2>
+		<section className="text-black p-20 bg-white shadow-lg">
+			<div className="">
+				<h2 className="text-3xl font-bold sm:text-2xl">Our Soil Sensors</h2>
 
-					<p class="mt-4 text-gray-300">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-						dolores iure fugit totam iste obcaecati. Consequatur ipsa quod ipsum
-						sequi culpa delectus, cumque id tenetur quibusdam, quos fuga minima.
-					</p>
-				</div>
+				<p className="mt-4 text-gray-900">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+					dolores iure fugit totam iste obcaecati. Consequatur ipsa quod ipsum
+					sequi culpa delectus, cumque id tenetur quibusdam, quos fuga minima.
+				</p>
 
-				<div class="mt-8 grid grid-cols-1 gap-8 md:gap-12 md:mt-16 md:grid-cols-2 lg:grid-cols-3">
+				<div className="mt-8 grid grid-cols-1 gap-8 md:gap-12 md:mt-16 md:grid-cols-2 lg:grid-cols-3">
 					{DATA.map(({ desc, name }) => {
 						return (
-							<div class="flex items-start">
-								<span class="flex-shrink-0 p-4 bg-white rounded-lg">
+							<div className="flex items-start group">
+								<span className="flex-shrink-0 p-4 bg-white rounded-lg">
 									<svg
 										className="w-5 h-5 text-black"
 										fill="none"
@@ -62,12 +60,19 @@ export default function Sensor() {
 									</svg>
 								</span>
 
-								<div class="ml-4">
-									<h2 class="text-lg font-bold hover:text-orange-400">
+								<div className="ml-4">
+									<h2
+										className="text-xl font-bold group-hover:text-lime-900 group-hover:underline decoration-lime-900 underline-offset-2 transition ease-in group-hover:scale-105 duration-500"
+										style={{
+											textDecorationThickness: "0.15rem",
+										}}
+									>
 										{name}
 									</h2>
 
-									<p class="mt-1 text-sm text-gray-300">{desc}</p>
+									<p className="group-hover:scale-105 transition ease-in duration-500 mt-1 text-md text-gray-700 tracking-tighter">
+										{desc}
+									</p>
 								</div>
 							</div>
 						);

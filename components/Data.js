@@ -1,4 +1,5 @@
 import Link from "next/link";
+import NavButton from "./NavButton";
 
 const DATA = [
 	{
@@ -21,13 +22,13 @@ const DATA = [
 
 export default function Data() {
 	return (
-		<div className=" grid grid-cols-2 py-20 px-8 bg-white shadow-md">
+		<div className=" grid grid-cols-2 p-20 bg-white shadow-md">
 			<div className="flex flex-col justify-center">
 				<div className="text-2xl font-semibold flex items-end space-x-4">
 					<img src="/iot.svg" className="h-20" />
-					<div> We use sensors to collect data </div>
+					<div> Know exactly how your plant is feeling </div>
 				</div>
-				<div className="pt-8 pl-4 pr-20 text-lg">
+				<div className="pt-8 text-lg">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 					eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
 					minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -37,10 +38,8 @@ export default function Data() {
 					culpa qui officia deserunt mollit anim id est laborum.
 				</div>
 				<Link href="/sensors">
-					<div className="flex pt-8 pl-4 space-x-3 items-center group cursor-pointer">
-						<div className="font-semibold group-hover:text-purple-700 transition ease-in duration-200">
-							Our Sensors
-						</div>
+					<div className="flex pt-8 space-x-3 items-center group cursor-pointer">
+						<NavButton title="OUR PLAN" />
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							fill="none"
