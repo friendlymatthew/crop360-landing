@@ -36,4 +36,4 @@ yarn-error.log*
 next-env.d.ts
 
 #sendgrid API key
-sendgrid.env
+.env
